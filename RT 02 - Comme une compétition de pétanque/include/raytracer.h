@@ -1,7 +1,7 @@
 #ifndef RAYTRACING_H
 #define RAYTRACING_H
 #include "geometry.h"
-#include "colors
+#include "colors.h"
 
 typedef struct Ray {
     Point3D pos;
@@ -13,10 +13,6 @@ typedef struct Intersection {
     ColorRGB col;
 } Intersection;
 
-
 // Construit le rayon (pos, vec)
-Ray createRay(Point3D pos, Vector3D pos);
+Ray createRay(Point3D pos, Vector3D vec);
 
-// Test si le rayon intersecte une sphère
-int intersectsSphere(Ray r, Sphere s,
- Intersection* intersection, float* t);
